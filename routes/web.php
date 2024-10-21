@@ -16,5 +16,27 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/home', function () {
-    return view('home');
+
+    $title = "Questa è la mia homepage!";
+    $pre = "Questa è una semplicissima homepage creata con Laravel";
+    $home ="Home";
+    $features = "caratteristiche";
+    $portfolio = "portfolio";
+    $others = "progetti";
+    $descrizione = "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+     Ex laborum ipsum quam id, facilis rerum officia velit numquam a amet officiis necessitatibus mollitia vel odit ad molestiae labore nostrum nihil!";
+     $img =""
+
+
+    return view('home',
+    [
+        "titolo" => $title,
+        "presentazione" => $pre,
+        "home" => $home,
+        "caratteristiche" =>$features,
+        "portfolio" => $portfolio,
+        "progetti" => $others,
+        "descrizione" => $descrizione,
+    ]
+);
 });
