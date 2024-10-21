@@ -50,7 +50,7 @@
             <h4>{{$descrizione}}</h4>
             <ul>
                 @foreach ($lista as $listItem )
-                <li>{{$listItem}}</li>
+                <li><h3>{{$listItem}}</h3></li>
                 @endforeach
 
             </ul>
