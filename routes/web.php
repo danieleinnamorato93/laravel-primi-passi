@@ -25,7 +25,6 @@ Route::get('/home', function () {
     $others = "progetti";
     $descrizione = "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
      Ex laborum ipsum quam id, facilis rerum officia velit numquam a amet officiis necessitatibus mollitia vel odit ad molestiae labore nostrum nihil!";
-     $img =""
 
 
     return view('home',
@@ -37,6 +36,7 @@ Route::get('/home', function () {
         "portfolio" => $portfolio,
         "progetti" => $others,
         "descrizione" => $descrizione,
+
     ]
 );
 });

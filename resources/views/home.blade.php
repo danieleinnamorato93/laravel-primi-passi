@@ -9,7 +9,7 @@
 </head>
 <body>
 <header><h1>Hello World</h1>
-    <nav class="navbar  bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">{{$home}}</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,6 +28,7 @@
               </li>
 
             </ul>
+
           </div>
         </div>
       </nav>
@@ -37,7 +38,27 @@
         <div class="col">
             <h2>{{$titolo}}</h2>
             <p>{{$presentazione}}</p>
+            <label for="inputPassword5" class="form-label">User:</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            <div id="passwordHelpBlock" class="form-text">
+
+                <label for="inputPassword5" class="form-label">Password:</label>
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="passwordHelpBlock" class="form-text">
+                    <button type="button" class="btn btn-danger">INVIA!</button>
+                    <button type="reset" class="btn btn-dark">RICARICA</button>
             <h4>{{$descrizione}}</h4>
+            <ul>
+                @foreach ($lista as $listItem )
+                <li>{{$listItem}}</li>
+                @endforeach
+
+            </ul>
+
+
+
+
+            </div>
         </div>
 
     </div>
